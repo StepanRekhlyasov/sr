@@ -30,12 +30,10 @@ export default defineComponent({
       selectedBreed: this.$route.params.breed,
     } 
   },
-  emits: ['bchBch'],
   methods:{
     ...mapActions(['getBreeds','getDogies']),
     ...mapMutations(['setfavs']),
     toPage(name : string, param : any){
-      this.$emit('bchBch')
       this.$router.push( { name: name, params: { breed: param }});
     }
   },

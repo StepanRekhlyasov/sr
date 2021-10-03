@@ -23,7 +23,7 @@ export default defineComponent({
         document.body.offsetHeight, document.documentElement.offsetHeight,
         document.body.clientHeight, document.documentElement.clientHeight
       );
-      if(window.scrollY >= scrollHeight - innerHeight){
+      if(window.scrollY + 200 >= scrollHeight - innerHeight){
           this.addDogies({count: 4, breed: this.breed})
       }
     },
